@@ -45,7 +45,7 @@ app.get('/user/:id', (req, res) => {
     .findOne({ _id: req.params.id })
     .then((data) => res.status(200).send(data))
     .catch(
-      (err) => (res.status(400).send('An Error Occourde'), console.log(err))
+      (err) => (res.status(400).send('An Error Occurred'), console.log(err))
     );
 });
 
